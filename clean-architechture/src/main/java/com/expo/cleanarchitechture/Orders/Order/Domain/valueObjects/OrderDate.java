@@ -12,4 +12,7 @@ public class OrderDate {
     private void validate(Date fecha){
 
     }
+    public Date value(){
+        return fecha;
+    }
 }

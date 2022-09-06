@@ -14,4 +14,7 @@ public class OrderAdress {
     private void formvalidation(String adress){
         if (adress == null || adress.isEmpty()) throw new RuntimeException("el valor es nulo");
     }
+    public String value(){
+        return Adress;
+    }
 }

@@ -14,4 +14,7 @@ public class OrderDescription {
     private void formvalidation(String description){
         if (description == null || description.isEmpty()) throw new RuntimeException("el valor es nulo");
     }
+    public String value(){
+        return  description;
+    }
 }

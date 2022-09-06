@@ -15,5 +15,7 @@ public class OrderState {
             throw new RuntimeException("el estado no existe");
         }
     }
-
+    public int value(){
+        return  state;
+    }
 }
