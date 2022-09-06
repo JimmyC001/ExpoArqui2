@@ -18,7 +18,7 @@ public class Order {
     private User OrderClin;
     private User OrderClient;
 
-    public Order(com.expo.cleanarchitechture.Orders.Order.Domain.valueObjects.OrderAdress orderAdress, com.expo.cleanarchitechture.Orders.Order.Domain.valueObjects.OrderDate orderDate, com.expo.cleanarchitechture.Orders.Order.Domain.valueObjects.OrderDescription orderDescription, com.expo.cleanarchitechture.Orders.Order.Domain.valueObjects.OrderState orderState, Service ordeService, User orderClin, User orderClient) {
+    public Order(OrderAdress orderAdress, OrderDate orderDate, OrderDescription orderDescription, OrderState orderState, Service ordeService, User orderClin, User orderClient) {
         OrderAdress = orderAdress;
         OrderDate = orderDate;
         OrderDescription = orderDescription;
