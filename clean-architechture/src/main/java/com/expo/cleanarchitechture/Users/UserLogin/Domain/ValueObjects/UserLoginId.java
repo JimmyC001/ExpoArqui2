@@ -1,17 +1,22 @@
 package com.expo.cleanarchitechture.Users.UserLogin.Domain.ValueObjects;
 
 public class UserLoginId {
-    private String value;
+    private Integer value;
     // Constructor
-    public UserLoginId(String value){
-       this.value = value;
+    public UserLoginId(Integer value){
+        validate(value);
+        this.value = value;
     }
     // Get value
-    public String getValue(){
+    public Integer value(){
         return this.value;
     }
     // Validator
-    public boolean validate(){
-        return true;
+    private void validate(Integer value){
+        idLengthValidation(value);
+    }
+    // Id lenght validation
+    private void idLengthValidation(Integer value){
+        if(value == null || value <= 0) throw new RuntimeException("Id de usuario no valido");
     }
 }

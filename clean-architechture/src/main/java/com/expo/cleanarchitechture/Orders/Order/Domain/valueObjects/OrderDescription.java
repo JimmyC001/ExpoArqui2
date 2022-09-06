@@ -9,6 +9,9 @@ public class OrderDescription {
     }
 
     private void validate(String description){
-
+        formvalidation(description);
+    }
+    private void formvalidation(String description){
+        if (description == null || description.isEmpty()) throw new RuntimeException("el valor es nulo");
     }
 }

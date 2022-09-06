@@ -2,20 +2,21 @@ package com.expo.cleanarchitechture.Orders.Service.Domain.valueObjects;
 
 public class ServiceId {
 
-    public String value;
+    public Integer  value;
 
 
-    public ServiceId(String value){
+    public ServiceId(Integer value){
+        validate(value);
         this.value = value;
     }
-
     // Get value
-    public String getValue(){
+    public Integer getValue(){
         return this.value;
     }
 
     // Validator
-    public boolean validate(){
-        return true;
+    public void validate(Integer value){
+        if (value >= 0) throw new RuntimeException("id no valido");
+
     }
 }

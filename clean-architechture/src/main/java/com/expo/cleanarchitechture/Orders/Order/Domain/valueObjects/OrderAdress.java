@@ -9,6 +9,9 @@ public class OrderAdress {
     }
 
     private void validate(String adress){
-
+        formvalidation(adress);
+    }
+    private void formvalidation(String adress){
+        if (adress == null || adress.isEmpty()) throw new RuntimeException("el valor es nulo");
     }
 }
