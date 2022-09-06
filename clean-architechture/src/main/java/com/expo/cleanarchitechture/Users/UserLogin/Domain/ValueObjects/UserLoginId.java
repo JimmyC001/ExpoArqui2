@@ -13,10 +13,10 @@ public class UserLoginId {
     }
     // Validator
     private void validate(Integer value){
-        idLengthValidation(value);
+        idNumberValidation(value);
     }
     // Id lenght validation
-    private void idLengthValidation(Integer value){
+    private void idNumberValidation(Integer value){
         if(value == null || value <= 0) throw new RuntimeException("Id de usuario no valido");
     }
 }
